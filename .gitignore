@@ -1,0 +1,16 @@
+# PowerShell
+*.ps1~
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Archives
+*.zip
+*.tar.gz
+
+# Temp
+*.tmp
+*.log
