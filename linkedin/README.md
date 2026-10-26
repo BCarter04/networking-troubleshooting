@@ -1,23 +1,27 @@
 # LinkedIn Assets
 
-Ready-to-use content for promoting the networking-troubleshooting repository on LinkedIn.
+Ready-to-use content for promoting the networking-troubleshooting repository.
 
-## Files
+## Contents
 
-| File | Purpose |
-|------|---------|
-| `announcement-post.md` | Full post announcing the repo (copy-paste ready) |
-| `carousel-indicators.md` | Slide-by-slide outline + caption for the Common Indicators carousel |
-| `carousel-decision-tree.md` | Slide-by-slide outline + caption for the “No Internet” decision tree |
-| `carousel-indicators.pdf` | Ready-to-upload PDF carousel (indicators) |
-| `carousel-decision-tree.pdf` | Ready-to-upload PDF carousel (decision tree) |
-| `post-ideas.md` | Additional short post ideas you can schedule |
+| File | Use |
+|------|-----|
+| `announcement-post.md` | Full announcement post (caption + first comment) |
+| `carousel-indicators.md` | Caption and slide reference for the indicators carousel |
+| `carousel-decision-tree.md` | Caption and slide reference for the decision-tree carousel |
+| `post-ideas.md` | Five shorter posts you can schedule |
+| `carousel-indicators.pdf` | Ready-to-upload document post |
+| `carousel-decision-tree.pdf` | Ready-to-upload document post |
 
-## How to use
+## Recommended posting order
 
-1. Upload the PDF as a **Document** post on LinkedIn (this creates the swipeable carousel).
-2. Paste the matching caption from the `.md` file.
-3. Put the GitHub link in the **first comment**.
-4. Optionally feature the post or add the repo to your Featured section.
+1. Announcement post (text or carousel).
+2. Indicators carousel.
+3. Decision-tree carousel.
+4. One of the shorter posts from `post-ideas.md` each week.
 
-All content is written to match the tone and accuracy of the repository.
+## Posting notes
+
+- Upload the PDF as a **Document** post. LinkedIn turns it into a swipeable carousel.
+- Put the GitHub link in the **first comment**, not the main caption.
+- The captions are written to stand alone if someone does not swipe.

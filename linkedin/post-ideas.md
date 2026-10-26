@@ -1,86 +1,87 @@
-# Additional LinkedIn Post Ideas
+# Additional Post Ideas
 
-Short posts you can schedule. Each can stand alone or link back to the repo.
+Short posts you can schedule. Put the repository link in the first comment for each.
 
 ---
 
-### 1. One-command summary
-**Hook:**  
+### One-command summary
+
+**Hook**  
 One PowerShell command. Full network snapshot.
 
-**Body:**  
+**Body**  
 I run this first on almost every network ticket:
 
 .\Get-NetworkSummary.ps1
 
-It shows adapters, IPs, gateways, DNS servers, and a few key checks without changing anything.
+It shows adapters, addresses, gateways, and DNS servers without changing anything.
 
-Then if I need something for the ticket:
+When I need something for the ticket:
 
 .\Generate-Report.ps1
 
-Both are in the free networking-troubleshooting repo (link in comments).
+Both live in the networking-troubleshooting repository.
 
 ---
 
-### 2. APIPA reminder
-**Hook:**  
+### APIPA reminder
+
+**Hook**  
 If you see 169.254.x.x, stop looking at DNS.
 
-**Body:**  
-That’s an APIPA address. DHCP failed.
+**Body**  
+That is an APIPA address. DHCP failed.
 
 First actions:
-1. Check the link (cable / Wi-Fi)
+1. Check the link (cable or Wi-Fi)
 2. Look at the DHCP server or scope
-3. Then re-test
+3. Re-test
 
-The full indicators table (and the script that surfaces this) is in the repo.
+The full indicators table and the script that surfaces this are in the repository.
 
 ---
 
-### 3. DNS vs path
-**Hook:**  
-Ping by IP works. Ping by name fails. What’s broken?
+### DNS versus path
 
-**Body:**  
+**Hook**  
+Ping by IP works. Ping by name fails. What is broken?
+
+**Body**  
 Almost always DNS.
 
 Quick confirmation:
-- ping 8.8.8.8   → works
-- ping google.com → fails
-- ipconfig /flushdns
+- ping 8.8.8.8 succeeds
+- ping google.com fails
+- Flush the cache
 - Check the DNS servers on the adapter
 
 I keep a short decision tree and a Test-DnsResolution.ps1 script for exactly this case.
 
 ---
 
-### 4. Interview angle
-**Hook:**  
+### Interview angle
+
+**Hook**  
 Network interview question I still see: “What does 169.254 mean?”
 
-**Body:**  
-It means the machine couldn’t get a DHCP lease and fell back to APIPA.
+**Body**  
+It means the machine could not obtain a DHCP lease and fell back to APIPA.
 
 Other classics that come up:
 - Valid IP but no gateway
-- Can ping IP but not name
+- Can ping by IP but not by name
 - Yellow triangle / limited connectivity
 
-I collected the most common ones with the first action for each. Useful for both the job and the interview.
+I collected the most common ones with the first action for each. Useful on the job and in interviews.
 
 ---
 
-### 5. Safe by default
-**Hook:**  
+### Safe by default
+
+**Hook**  
 I only write network scripts that are safe to run as a normal user.
 
-**Body:**  
+**Body**  
 No changing settings. No restarting services. Just reading information and reporting it clearly.
 
-That’s the design rule for every script in the networking-troubleshooting repo. You can drop them on a machine and run them without worrying about side effects.
-
----
-
-**Tip:** For each of these, put the GitHub link in the first comment rather than the main post.
+That is the design rule for every script in the networking-troubleshooting repository. You can drop them on a machine and run them without worrying about side effects.
