@@ -89,7 +89,8 @@ networking-troubleshooting/
 ├── cheatsheets/
 │   ├── common-ports.md
 │   └── quick-commands.md
-└── examples/                # Sample outputs
+├── examples/                # Sample outputs
+└── linkedin/                # Ready-to-use LinkedIn posts and carousel outlines
 ```
 
 ---
